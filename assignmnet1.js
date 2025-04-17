@@ -12,8 +12,8 @@ function formatCurrency(amount, currencyCode) {
 }
 
 
-console.log(formatCurrency(1234567.89, 'USD')); // $1,234,567.89 (en-US)
-console.log(formatCurrency(1234567.89, 'EUR')); // €1,234,567.89 (en-US)
-console.log(formatCurrency(1234567.89, 'INR')); // ₹12,34,567.89 (en-IN)
-console.log(formatCurrency(1234567.89, 'JPY')); // ¥1,234,568 (no decimals)
+console.log(formatCurrency(1234567.89, 'USD')); 
+console.log(formatCurrency(1234567.89, 'EUR')); 
+console.log(formatCurrency(1234567.89, 'INR')); 
+console.log(formatCurrency(1234567.89, 'JPY')); 
 
