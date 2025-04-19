@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Item Demo</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fruit List</h2>
+  <ul id="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Date</li>
+    <li>Elderberry</li>
+    <li>Fig</li>
+  </ul>
+
+  <script>
+    const listItems = document.querySelectorAll("#myList li");
+
+    // Log each list item's text content
+    listItems.forEach((item, index) => {
+      console.log(`Item ${index + 1}:`, item.textContent);
+
+      // Add class to every second item
+      if ((index + 1) % 2 === 0) {
+        item.classList.add("highlight");
+      }
+    });
+
+    // Log total number of items
+    console.log("Total list items:", listItems.length);
+  </script>
+</body>
+</html>
