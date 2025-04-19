@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>JS Scope Demo</title></head>
+<body>
+  <h3>Check the Console</h3>
+  <script>
+    // Global scope
+    var globalVar = "Global";
+    console.log("Global:", globalVar);
+
+    // Function (Local) scope
+    function testFunc() {
+      let localVar = "Local";
+      console.log("Inside Function:", localVar);
+    }
+    testFunc();
+  
+    if (true) {
+      let blockVar = "Block";
+      console.log("Inside Block:", blockVar);
+    }
+
+    let value = "Outer";
+    function shadow() {
+      let value = "Inner";
+      console.log("Shadowed:", value);
+    }
+    shadow();
+    console.log("Outside:", value);
+  </script>
+</body>
+</html>
