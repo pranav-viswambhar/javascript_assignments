@@ -24,17 +24,17 @@
   <script>
     const listItems = document.querySelectorAll("#myList li");
 
-    // Log each list item's text content
+    
     listItems.forEach((item, index) => {
       console.log(`Item ${index + 1}:`, item.textContent);
 
-      // Add class to every second item
+      
       if ((index + 1) % 2 === 0) {
         item.classList.add("highlight");
       }
     });
 
-    // Log total number of items
+    
     console.log("Total list items:", listItems.length);
   </script>
 </body>
